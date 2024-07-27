@@ -37,3 +37,33 @@ console.log("Sum of Numbers:", sumOfNumbers);
 // Use the forEach method to print each number in the array to the console
 console.log("Each number in the array:");
 numbers.forEach(num => console.log(num));
+
+// Part 3
+
+// Create a function named greet that takes a name parameter and prints a greeting message to the console
+function greet(name) {
+    console.log(`Hello, ${name}!`);
+}
+
+// Example usage of greet function
+greet("Alice");
+greet("Bob");
+
+// Create a function named sumArray that takes an array of numbers as a parameter and returns the sum of all elements
+function sumArray(numbers) {
+    return numbers.reduce((sum, num) => sum + num, 0);
+}
+
+// Example usage of sumArray function
+let exampleArray = [1, 2, 3, 4, 5];
+console.log("Sum of array:", sumArray(exampleArray));
+
+// Create a function named findMax that takes an array of numbers as a parameter and returns the maximum number
+function findMax(numbers) {
+    return Math.max(...numbers);
+}
+
+// Example usage of findMax function
+let anotherArray = [3, 7, 2, 9, 5];
+console.log("Maximum number in array:", findMax(anotherArray));
+
